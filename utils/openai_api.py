@@ -4,10 +4,8 @@ import re
 from openai import OpenAI
 from dotenv import load_dotenv
 
-# Load environment variables from .env
 load_dotenv()
 
-# Configure the OpenAI API client
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
 SYSTEM_PROMPT = """You are an expert Sentiment Analysis engine for a B2B sales intelligence platform.

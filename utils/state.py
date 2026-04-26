@@ -11,7 +11,7 @@ def add_to_history(result: dict):
     init_history()
     entry = {**result, "timestamp": datetime.now().strftime("%H:%M:%S · %d %b %Y")}
     st.session_state.analysis_history.insert(0, entry)
-    # Keep max 50 entries
+    # max 50 entries
     st.session_state.analysis_history = st.session_state.analysis_history[:50]
 
 

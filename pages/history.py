@@ -2,7 +2,6 @@ import streamlit as st
 from utils.state import get_history, clear_history
 from utils.ui_components import render_page_header, SENTIMENT_COLORS
 
-
 def render():
     render_page_header(
         "🕘 Analysis History",
